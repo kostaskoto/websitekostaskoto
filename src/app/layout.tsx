@@ -9,8 +9,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'eSki PMS',
-  description: 'This is a property management system from eSki.'
+  title: 'Konstantinos Kotorenis',
+  description: 'Personal website of Konstantinos Kotorenis'
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
