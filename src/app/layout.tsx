@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './globalStyle.scss';
 import { ReactNode } from 'react';
+import Header from '@/components/header/Header';
 
 const manrope = Manrope({
   variable: '--font-manrope',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
     <body suppressHydrationWarning className={`${manrope.variable}`}>
+      <Header />
           {children}
     </body>
     </html>
