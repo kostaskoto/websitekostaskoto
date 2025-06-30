@@ -1,10 +1,19 @@
+'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useTranslation } from 'react-i18next';
+import LanguageChanger from "@/components/language/LanguageChanger";
 
 export default function Home() {
+  const { t } = useTranslation('home');
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <LanguageChanger />
+        <h1>
+          {t('test')}
+        </h1>
         <Image
           className={styles.logo}
           src="/next.svg"
