@@ -1,16 +1,30 @@
 'use client';
 import Image from "next/image";
-import styles from "./page.module.css";
 import { useTranslation } from 'react-i18next';
-import LanguageChanger from "@/components/language/LanguageChanger";
-import Header from "@/components/header/Header";
+import './home.scss';
 
 export default function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className={styles.page}>
-      <h1>{t('title')}</h1>
+    <div className='home'>
+      <div className='home-title'>
+        <h1>{t('title-1')}</h1>
+        <h1>{t('title-2')}</h1>
+      </div>
+      <Image
+        className='home-image'
+        src='/home/homeWelcome.jpg'
+        alt={t('image-alt')}
+        width={2463}
+        height={3695}
+        loading="lazy"
+      />
+      <div className='home-subtitles'>
+        <h2>{t('subtitle-1')}</h2>
+        <h2>{t('subtitle-2')}</h2>
+        <h2>{t('subtitle-3')}</h2>
+      </div>
     </div>
   );
 }
