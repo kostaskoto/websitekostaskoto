@@ -4,6 +4,7 @@ import resourcesToBackend from 'i18next-resources-to-backend';
 import i18nConfig from '../../i18nConfig';
 
 const namespaces = [
+  'header',
   'home',
 ];
 

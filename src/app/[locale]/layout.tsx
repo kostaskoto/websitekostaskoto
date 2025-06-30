@@ -1,4 +1,5 @@
 import initTranslations from '@/app/i18n';
+import Header from '@/components/header/Header';
 import TranslationsProvider from '@/providers/TranslationProvider';
 import { ReactNode } from 'react';
 
@@ -16,6 +17,7 @@ export default async function LocaleLayout({ children, params: paramsPromise }: 
   return (
     <TranslationsProvider locale={paramLocale} resources={resources}>
       <div className="layout">
+        <Header />
           {children}
       </div>
     </TranslationsProvider>
