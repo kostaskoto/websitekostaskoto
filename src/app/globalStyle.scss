@@ -49,6 +49,31 @@ h2 {
   letter-spacing: 0.3em;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

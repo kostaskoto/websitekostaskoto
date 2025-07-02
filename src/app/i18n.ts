@@ -6,6 +6,7 @@ import i18nConfig from '../../i18nConfig';
 const namespaces = [
   'header',
   'home',
+  'aboutMe',
 ];
 
 export default async function initTranslations(
