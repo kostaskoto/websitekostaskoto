@@ -48,6 +48,65 @@ export default function AboutMe() {
                         </ul>
                     </div>
                     <h3>{t('volunteering-title')}</h3>
+                    <div className="about-me-subcontent">
+                        <h4>{t('upatras')}</h4>
+                        <h5>{t('upatras-date-1')}</h5>
+                        <p>{t('upatras-description-1')}</p>
+                        <h5>{t('upatras-date-2')}</h5>
+                        <p>{t('upatras-description-2')}</p>
+                    </div>
+                    <div className="about-me-subcontent">
+                        <h4>{t('n+1')}</h4>
+                        <h5>{t('n+1-date')}</h5>
+                        <p>{t('n+1-description')}</p>
+                        <ul>
+                            <li>{t('n+1-activity-1')}</li>
+                            <li>{t('n+1-activity-2')}</li>
+                            <li>{t('n+1-activity-3')}</li>
+                            <li>{t('n+1-activity-4')}</li>
+                        </ul>
+                    </div>
+                    <div className="about-me-subcontent">
+                        <h4>{t('ieee')}</h4>
+                        <h5>{t('ieee-date')}</h5>
+                        <p>{t('ieee-description')}</p>
+                        <ul>
+                            <li>{t('ieee-activity-1')}</li>
+                            <li>{t('ieee-activity-2')}</li>
+                            <li>{t('ieee-activity-3')}</li>
+                            <li>{t('ieee-activity-4')}</li>
+                            <li>{t('ieee-activity-5')}</li>
+                        </ul>
+                    </div>
+                    <div className="about-me-subcontent">
+                        <h4>{t('eestec')}</h4>
+                        <h5>{t('eestec-date-1')}</h5>
+                        <p>{t('eestec-description-1')}</p>
+                        <h5>{t('eestec-date-2')}</h5>
+                        <p>{t('eestec-description-2')}</p>
+                        <ul>
+                            <li>{t('eestec-2-activity-1')}</li>
+                            <li>{t('eestec-2-activity-2')}</li>
+                            <li>{t('eestec-2-activity-3')}</li>
+                            <li>{t('eestec-2-activity-4')}</li>
+                            <li>{t('eestec-2-activity-5')}</li>
+                            <li>{t('eestec-2-activity-6')}</li>
+                            <li>{t('eestec-2-activity-7')}</li>
+                            <li>{t('eestec-2-activity-8')}</li>
+                        </ul>
+                        <h5>{t('eestec-date-3')}</h5>
+                        <p>{t('eestec-description-3')}</p>
+                        <ul>
+                            <li>{t('eestec-3-activity-1')}</li>
+                            <li>{t('eestec-3-activity-2')}</li>
+                            <li>{t('eestec-3-activity-3')}</li>
+                            <li>{t('eestec-3-activity-4')}</li>
+                        </ul>
+                        <h5>{t('eestec-date-4')}</h5>
+                        <p>{t('eestec-description-4')}</p>
+                    </div>
+
+
                 </div>
             </div>
         </div>
