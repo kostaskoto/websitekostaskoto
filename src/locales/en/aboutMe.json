@@ -1,7 +1,7 @@
 {
     "jobs-title": "Jobs",
     "mobiweb": "MobiWEB | March 2025 - Present",
-    "mobiweb-description": "NOC Engineer - Business Customer Support ",
+    "mobiweb-description": "Business Customer Support ",
     "eski": "eSki (Startup Company) | May 2024 - Present",
     "eski-frontend": "Frontend React Developer",
     "eski-landing": "Developed the Landing Page",
@@ -56,5 +56,20 @@
     "eestec-3-activity-3": "Management of Soft Skills Academy Project website redesign",
     "eestec-3-activity-4": "Design of Social Media Posts & Videos",
     "eestec-date-4": "September 2019- July 2020",
-    "eestec-description-4": "Design Team member (International level) | Design of social media posts and videos"
+    "eestec-description-4": "Design Team member (International level) | Design of social media posts and videos",
+    "education": "Education",
+    "upatras-edu": "University of Patras",
+    "upatras-edu-date": "2016 - Present",
+    "upatras-edu-description": "Integrated Master's Degree in Electrical and Computer Engineering",
+    "upatras-edu-activity-1": "Thesis: Improvement of the User Interaction Experience with a Touch-Screen Laptop",
+    "upatras-edu-activity-2": "IoT Project: React Native Smart Home Application",
+    "upatras-edu-activity-3": "Databases Project: Car Rental",
+    "upatras-edu-activity-4": "Internet Programming Project: Library Management Website",
+    "upatras-edu-activity-5": "Interactive Technologies Project: Redesign of a bank website",
+    "workshops": "Workshops & Seminars",
+    "workshops-date-1": "2022",
+    "workshops-description-1": "A glimpse into the future - Erasmus Youth | Creation of street art, murals, Łódź, Poland",
+    "workshops-date-2": "2020",
+    "workshops-description-2-1": "EESTEC 6th Design Sprint | Education in graphic, UI/UX, video design | 6 days",
+    "workshops-description-2-2": "EESTEC Leadership Academy | Education on how to lead a team | 4 days"
 }

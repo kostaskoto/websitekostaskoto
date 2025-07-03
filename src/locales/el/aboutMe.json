@@ -1,7 +1,7 @@
 {
     "jobs-title": "Δουλειες",
     "mobiweb": "MobiWEB | Μαρτιος 2025 - Σημερα",
-    "mobiweb-description": "Μηχανικός Δικτύων - Υποστήριξη Επιχειρηματικών Πελατών",
+    "mobiweb-description": "Υποστήριξη Επιχειρηματικών Πελατών",
     "eski": "eSki (Startup Εταιρεια) | Μαιος 2024 - Σημερα",
     "eski-frontend": "Frontend Προγραμματιστής με React",
     "eski-landing": "Ανάπτυξη του Landing Page",
@@ -56,5 +56,20 @@
     "eestec-3-activity-3": "Διαχείριση του ανασχεδιασμού της ιστοσελίδας του Soft Skills Academy Project",
     "eestec-3-activity-4": "Σχεδίαση αναρτήσεων και βίντεο για τα Social Media",
     "eestec-date-4": "Σεπτέμβριος 2019- Ιούλιος 2020",
-    "eestec-description-4": "Μέλος της Design Team (Διεθνές επίπεδο) | Σχεδίαση αναρτήσεων και βίντεο για τα social media"
+    "eestec-description-4": "Μέλος της Design Team (Διεθνές επίπεδο) | Σχεδίαση αναρτήσεων και βίντεο για τα social media",
+    "education": "Εκπαίδευση",
+    "upatras-edu": "Πανεπιστήμιο Πατρών",
+    "upatras-edu-date": "2016 - Σήμερα",
+    "upatras-edu-description": "Δίπλωμα Ηλεκτρολόγου Μηχανικού και Τεχνολογίας Υπολογιστών",
+    "upatras-edu-activity-1": "Διπλωματική: Βελτίωση της εμπειρίας αλληλεπίδρασης του ανθρώπου με οθόνη αφής σε λάπτοπ",
+    "upatras-edu-activity-2": "IoT πρότζεκτ: React Native σε εφαρμογή έξυπνου σπιτιού",
+    "upatras-edu-activity-3": "Πρότζεκτ βάσεων δεδομένων: Ενοικίαση αυτοκινήτων",
+    "upatras-edu-activity-4": "Πρότζεκτ προγραμματισμού διαδικτύου: Ιστοσελίδα διαχείρισης βιβλιοθηκών",
+    "upatras-edu-activity-5": "Πρότζεκτ Διαδραστικών Τεχνολογιών: Επανασχεδίαση ιστοσελίδας τράπεζας",
+    "workshops": "Workshops & Σεμινάρια",
+    "workshops-date-1": "2022",
+    "workshops-description-1": "A glimpse into the future - Erasmus Youth | Δημιουργεία street art, τοιχογραφιών, Łódź, Πολωνία",
+    "workshops-date-2": "2020",
+    "workshops-description-2-1": "EESTEC 6th Design Sprint | Εκπαίδευση σε γραφιστική, UI/UX, σχεδίαση βίντεο | 6 ημέρες",
+    "workshops-description-2-2": "EESTEC Leadership Academy | Εκπαίδευση για το πώς να ηγηθείς μιας ομάδας | 4 ημέρες"
 }

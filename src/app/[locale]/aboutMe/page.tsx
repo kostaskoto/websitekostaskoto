@@ -105,6 +105,27 @@ export default function AboutMe() {
                         <h5>{t('eestec-date-4')}</h5>
                         <p>{t('eestec-description-4')}</p>
                     </div>
+                    <h3>{t('education')}</h3>
+                    <div className="about-me-subcontent">
+                        <h4>{t('upatras-edu')}</h4>
+                        <h5>{t('upatras-edu-date')}</h5>
+                        <p>{t('upatras-edu-description')}</p>
+                        <ul>
+                            <li>{t('upatras-edu-activity-1')}</li>
+                            <li>{t('upatras-edu-activity-2')}</li>
+                            <li>{t('upatras-edu-activity-3')}</li>
+                            <li>{t('upatras-edu-activity-4')}</li>
+                            <li>{t('upatras-edu-activity-5')}</li>
+                        </ul>
+                    </div>
+                    <div className="about-me-subcontent">
+                        <h4>{t('workshops')}</h4>
+                        <h5>{t('workshops-date-1')}</h5>
+                        <p>{t('workshops-description-1')}</p>
+                        <h5>{t('workshops-date-2')}</h5>
+                        <p>{t('workshops-description-2-1')}</p>
+                        <p>{t('workshops-description-2-2')}</p>
+                    </div>
 
 
                 </div>
