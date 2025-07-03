@@ -8,7 +8,7 @@ import { ReactNode } from 'react';
 interface TranslationsProviderProps {
   children: ReactNode;
   locale: string;
-  resources?: any;
+  resources?: import('i18next').Resource;
 }
 
 export default function TranslationsProvider({ children, locale, resources }: Readonly<TranslationsProviderProps>) {

@@ -11,10 +11,12 @@ const namespaces = [
   'graphicDesign',
 ];
 
+import type { i18n, Resource } from 'i18next';
+
 export default async function initTranslations(
   locale: string,
-  i18nInstance?: any,
-  resources?: any
+  i18nInstance?: i18n,
+  resources?: Resource | undefined
 ) {
   i18nInstance = i18nInstance || createInstance();
 

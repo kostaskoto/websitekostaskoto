@@ -74,6 +74,17 @@ p {
   font-weight: 400;
 }
 
+.horizontal-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 0.6rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

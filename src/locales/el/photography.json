@@ -1,4 +1,12 @@
 {
     "title": "Φωτογραφία",
-    "exhibitions": "Εκθέσεις"
+    "exhibitions": "Εκθέσεις",
+    "existential": {
+        "title": "Υπαρξιακό",
+        "description": "Αθήνα - O.art.ath - Ιούνιος 2025"
+    },
+    "notGoodEnough": {
+        "title": "Δεν είμαι αρκετός",
+        "description": "Πάτρα - Ν+1 Κλικ - Δεκέμβριος 2024"
+    }
 }

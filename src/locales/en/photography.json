@@ -1,4 +1,12 @@
 {
     "title": "Photography",
-    "exhibitions": "Exhibitions"
+    "exhibitions": "Exhibitions",
+    "existential": {
+        "title": "Existential",
+        "description": "Athens - O.art.ath - June 2025"
+    },
+    "notGoodEnough": {
+        "title": "I am not Good Enough",
+        "description": "Patras - N+1 Click - December 2024"
+    }
 }
