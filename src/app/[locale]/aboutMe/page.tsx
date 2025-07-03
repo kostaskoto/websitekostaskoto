@@ -21,112 +21,117 @@ export default function AboutMe() {
                     />
                 </div>
                 <div className="about-me-content">
-                    <h3>{t('jobs-title')}</h3>
-                    <div className="about-me-subcontent">
-                        <h4>{t('mobiweb')}</h4>
-                        <p>{t('mobiweb-description')}</p>
+                    <div className='about-me-chapter'>
+                        <h3>{t('jobs-title')}</h3>
+                        <div className="about-me-subcontent">
+                            <h4>{t('mobiweb')}</h4>
+                            <p>{t('mobiweb-description')}</p>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <h4>{t('eski')}</h4>
+                            <p>{t('eski-frontend')}</p>
+                            <ul>
+                                <li>{t('eski-landing')}</li>
+                                <li>{t('eski-customer')}</li>
+                                <li>{t('eski-suplier')}</li>
+                            </ul>
+                            <p>{t('eski-ui')}</p>
+                            <ul>
+                                <li>{t('eski-design-landing')}</li>
+                                <li>{t('eski-design-customer')}</li>
+                                <li>{t('eski-design-suplier')}</li>
+                                <li>{t('eski-research')}</li>
+                            </ul>
+                            <p>{t('eski-graphic')}</p>
+                            <ul>
+                                <li>{t('eski-brand')}</li>
+                                <li>{t('eski-cards')}</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="about-me-subcontent">
-                        <h4>{t('eski')}</h4>
-                        <p>{t('eski-frontend')}</p>
-                        <ul>
-                            <li>{t('eski-landing')}</li>
-                            <li>{t('eski-customer')}</li>
-                            <li>{t('eski-suplier')}</li>
-                        </ul>
-                        <p>{t('eski-ui')}</p>
-                        <ul>
-                            <li>{t('eski-design-landing')}</li>
-                            <li>{t('eski-design-customer')}</li>
-                            <li>{t('eski-design-suplier')}</li>
-                            <li>{t('eski-research')}</li>
-                        </ul>
-                        <p>{t('eski-graphic')}</p>
-                        <ul>
-                            <li>{t('eski-brand')}</li>
-                            <li>{t('eski-cards')}</li>
-                        </ul>
+                    <div className='about-me-chapter'>
+                        <h3>{t('volunteering-title')}</h3>
+                        <div className="about-me-subcontent">
+                            <h4>{t('upatras')}</h4>
+                            <h5>{t('upatras-date-1')}</h5>
+                            <p>{t('upatras-description-1')}</p>
+                            <h5>{t('upatras-date-2')}</h5>
+                            <p>{t('upatras-description-2')}</p>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <h4>{t('n+1')}</h4>
+                            <h5>{t('n+1-date')}</h5>
+                            <p>{t('n+1-description')}</p>
+                            <ul>
+                                <li>{t('n+1-activity-1')}</li>
+                                <li>{t('n+1-activity-2')}</li>
+                                <li>{t('n+1-activity-3')}</li>
+                                <li>{t('n+1-activity-4')}</li>
+                            </ul>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <h4>{t('ieee')}</h4>
+                            <h5>{t('ieee-date')}</h5>
+                            <p>{t('ieee-description')}</p>
+                            <ul>
+                                <li>{t('ieee-activity-1')}</li>
+                                <li>{t('ieee-activity-2')}</li>
+                                <li>{t('ieee-activity-3')}</li>
+                                <li>{t('ieee-activity-4')}</li>
+                                <li>{t('ieee-activity-5')}</li>
+                            </ul>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <h4>{t('eestec')}</h4>
+                            <h5>{t('eestec-date-1')}</h5>
+                            <p>{t('eestec-description-1')}</p>
+                            <h5>{t('eestec-date-2')}</h5>
+                            <p>{t('eestec-description-2')}</p>
+                            <ul>
+                                <li>{t('eestec-2-activity-1')}</li>
+                                <li>{t('eestec-2-activity-2')}</li>
+                                <li>{t('eestec-2-activity-3')}</li>
+                                <li>{t('eestec-2-activity-4')}</li>
+                                <li>{t('eestec-2-activity-5')}</li>
+                                <li>{t('eestec-2-activity-6')}</li>
+                                <li>{t('eestec-2-activity-7')}</li>
+                                <li>{t('eestec-2-activity-8')}</li>
+                            </ul>
+                            <h5>{t('eestec-date-3')}</h5>
+                            <p>{t('eestec-description-3')}</p>
+                            <ul>
+                                <li>{t('eestec-3-activity-1')}</li>
+                                <li>{t('eestec-3-activity-2')}</li>
+                                <li>{t('eestec-3-activity-3')}</li>
+                                <li>{t('eestec-3-activity-4')}</li>
+                            </ul>
+                            <h5>{t('eestec-date-4')}</h5>
+                            <p>{t('eestec-description-4')}</p>
+                        </div>
                     </div>
-                    <h3>{t('volunteering-title')}</h3>
-                    <div className="about-me-subcontent">
-                        <h4>{t('upatras')}</h4>
-                        <h5>{t('upatras-date-1')}</h5>
-                        <p>{t('upatras-description-1')}</p>
-                        <h5>{t('upatras-date-2')}</h5>
-                        <p>{t('upatras-description-2')}</p>
+                    <div className='about-me-chapter'>
+                        <h3>{t('education')}</h3>
+                        <div className="about-me-subcontent">
+                            <h4>{t('upatras-edu')}</h4>
+                            <h5>{t('upatras-edu-date')}</h5>
+                            <p>{t('upatras-edu-description')}</p>
+                            <ul>
+                                <li>{t('upatras-edu-activity-1')}</li>
+                                <li>{t('upatras-edu-activity-2')}</li>
+                                <li>{t('upatras-edu-activity-3')}</li>
+                                <li>{t('upatras-edu-activity-4')}</li>
+                                <li>{t('upatras-edu-activity-5')}</li>
+                            </ul>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <h4>{t('workshops')}</h4>
+                            <h5>{t('workshops-date-1')}</h5>
+                            <p>{t('workshops-description-1')}</p>
+                            <h5>{t('workshops-date-2')}</h5>
+                            <p>{t('workshops-description-2-1')}</p>
+                            <p>{t('workshops-description-2-2')}</p>
+                        </div>
                     </div>
-                    <div className="about-me-subcontent">
-                        <h4>{t('n+1')}</h4>
-                        <h5>{t('n+1-date')}</h5>
-                        <p>{t('n+1-description')}</p>
-                        <ul>
-                            <li>{t('n+1-activity-1')}</li>
-                            <li>{t('n+1-activity-2')}</li>
-                            <li>{t('n+1-activity-3')}</li>
-                            <li>{t('n+1-activity-4')}</li>
-                        </ul>
-                    </div>
-                    <div className="about-me-subcontent">
-                        <h4>{t('ieee')}</h4>
-                        <h5>{t('ieee-date')}</h5>
-                        <p>{t('ieee-description')}</p>
-                        <ul>
-                            <li>{t('ieee-activity-1')}</li>
-                            <li>{t('ieee-activity-2')}</li>
-                            <li>{t('ieee-activity-3')}</li>
-                            <li>{t('ieee-activity-4')}</li>
-                            <li>{t('ieee-activity-5')}</li>
-                        </ul>
-                    </div>
-                    <div className="about-me-subcontent">
-                        <h4>{t('eestec')}</h4>
-                        <h5>{t('eestec-date-1')}</h5>
-                        <p>{t('eestec-description-1')}</p>
-                        <h5>{t('eestec-date-2')}</h5>
-                        <p>{t('eestec-description-2')}</p>
-                        <ul>
-                            <li>{t('eestec-2-activity-1')}</li>
-                            <li>{t('eestec-2-activity-2')}</li>
-                            <li>{t('eestec-2-activity-3')}</li>
-                            <li>{t('eestec-2-activity-4')}</li>
-                            <li>{t('eestec-2-activity-5')}</li>
-                            <li>{t('eestec-2-activity-6')}</li>
-                            <li>{t('eestec-2-activity-7')}</li>
-                            <li>{t('eestec-2-activity-8')}</li>
-                        </ul>
-                        <h5>{t('eestec-date-3')}</h5>
-                        <p>{t('eestec-description-3')}</p>
-                        <ul>
-                            <li>{t('eestec-3-activity-1')}</li>
-                            <li>{t('eestec-3-activity-2')}</li>
-                            <li>{t('eestec-3-activity-3')}</li>
-                            <li>{t('eestec-3-activity-4')}</li>
-                        </ul>
-                        <h5>{t('eestec-date-4')}</h5>
-                        <p>{t('eestec-description-4')}</p>
-                    </div>
-                    <h3>{t('education')}</h3>
-                    <div className="about-me-subcontent">
-                        <h4>{t('upatras-edu')}</h4>
-                        <h5>{t('upatras-edu-date')}</h5>
-                        <p>{t('upatras-edu-description')}</p>
-                        <ul>
-                            <li>{t('upatras-edu-activity-1')}</li>
-                            <li>{t('upatras-edu-activity-2')}</li>
-                            <li>{t('upatras-edu-activity-3')}</li>
-                            <li>{t('upatras-edu-activity-4')}</li>
-                            <li>{t('upatras-edu-activity-5')}</li>
-                        </ul>
-                    </div>
-                    <div className="about-me-subcontent">
-                        <h4>{t('workshops')}</h4>
-                        <h5>{t('workshops-date-1')}</h5>
-                        <p>{t('workshops-description-1')}</p>
-                        <h5>{t('workshops-date-2')}</h5>
-                        <p>{t('workshops-description-2-1')}</p>
-                        <p>{t('workshops-description-2-2')}</p>
-                    </div>
-
 
                 </div>
             </div>

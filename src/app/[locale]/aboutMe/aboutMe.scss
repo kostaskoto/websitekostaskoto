@@ -38,21 +38,26 @@
                 flex-direction: column;
                 justify-content: start;
                 align-items: start;
-                gap: 1rem;
+                gap: 4rem;
                 height: 100%;
                 padding-bottom: 2rem;
                 padding-right: 1rem;
 
-                .about-me-subcontent {
+                .about-me-chapter {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.5rem;
+                    gap: 1.5rem;
 
-                    ul {
-                        padding-left: 2rem;
+                    .about-me-subcontent {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+
+                        ul {
+                            padding-left: 2rem;
+                        }
                     }
                 }
-
             }
         }
     }
