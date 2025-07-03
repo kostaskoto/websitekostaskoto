@@ -7,6 +7,8 @@ const namespaces = [
   'header',
   'home',
   'aboutMe',
+  'photography',
+  'graphicDesign',
 ];
 
 export default async function initTranslations(
