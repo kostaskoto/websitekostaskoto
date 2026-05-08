@@ -16,13 +16,13 @@ export default function Photography() {
             title={t('existential.title')}
             description={t('existential.description')}
             imageUrl="/photography/existential/existential.jpg"
-            link="existential"
+            link="photography/existential"
         />
         <Poster
             title={t('notGoodEnough.title')}
             description={t('notGoodEnough.description')}
             imageUrl="/photography/notGoodEnough/notGoodEnough.jpg"
-            link="notGoodEnough"
+            link="photography/notGoodEnough"
         />
       </div>
     </div>
