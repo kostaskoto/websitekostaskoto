@@ -9,6 +9,7 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <div className='home-component'>
       <div className='home-title'>
         <h1>{t('title-1')}</h1>
         <h1>{t('title-2')}</h1>
@@ -25,6 +26,7 @@ export default function Home() {
         <h2>{t('subtitle-1')}</h2>
         <h2>{t('subtitle-2')}</h2>
         <h2>{t('subtitle-3')}</h2>
+      </div>
       </div>
     </div>
   );

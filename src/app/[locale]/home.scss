@@ -1,29 +1,38 @@
 .home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: calc(100vh - 4rem);
+    justify-content: start;
+    padding: 0rem 1rem 1rem 1rem;
+    gap: 1rem;
     width: 100%;
-    min-height: 300px;
-    text-align: center;
-    padding: 0rem 2rem 4rem 2rem;
-    gap: 2rem;
-    text-wrap: nowrap;
+
+    .home-component {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        height: 70vh;
+        min-height: 300px;
+        text-align: center;
+        gap: 1rem;
+        text-wrap: nowrap;
+    }
 
     .home-title {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        justify-content: end;
-        align-items: end;
-        translate: 0 -65%;
+        justify-content: start;
+        align-items: start;
+        translate: 0 0;
         height: 100%;
     }
 
     .home-image {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         border: 0.6rem solid white;
     }
 
@@ -33,7 +42,45 @@
         gap: 0.5rem;
         justify-content: start;
         align-items: start;
-        translate: 0 65%;
+        translate: 0 0;
         height: fit-content;
+        padding: 0 0 4rem 0;
+    }
+}
+
+//(min-aspect-ratio: 16/9) or
+@media (min-width: calc(60vh + 800px)) {
+    .home {
+        justify-content: center;
+        height: calc(100vh - 5rem);
+        width: 100%;
+        padding: 0rem 2rem 4rem 2rem;
+        gap: 2rem;
+
+        .home-component {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 100%;
+            gap: 2rem;
+        }
+
+        .home-title {
+            justify-content: end;
+            align-items: end;
+            translate: 0 -65%;
+        }
+
+        .home-image {
+            width: auto;
+            height: 100%;
+            max-width: none;
+        }
+
+        .home-subtitles {
+            translate: 0 65%;
+            padding: 0;
+        }
     }
 }
