@@ -25,8 +25,18 @@ export default async function initTranslations(
   if (!resources) {
     i18nInstance.use(
       resourcesToBackend(
-        (language: string, namespace: string) =>
-          import(`@/locales/${language}/${namespace}.json`)
+        (language: string, namespace: string) =>{
+          switch (language) {
+            case "en":
+              return import(`@/locales/en/${namespace}.json`);
+
+            case "el":
+              return import(`@/locales/el/${namespace}.json`);
+
+            default:
+              throw new Error(`Unsupported locale: ${language}`);
+          }
+        }
       )
     );
   }

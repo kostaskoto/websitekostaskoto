@@ -11,7 +11,7 @@
   "dependencies": {
     "i18next": "^25.2.1",
     "i18next-resources-to-backend": "^1.2.1",
-    "next": "15.3.4",
+    "next": "^15.5.25",
     "next-i18n-router": "^5.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -26,5 +26,10 @@
     "eslint-config-next": "15.3.4",
     "sass": "^1.89.2",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true,
+    "sharp@0.34.5": true,
+    "@parcel/watcher@2.6.0": true
   }
 }

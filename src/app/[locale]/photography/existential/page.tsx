@@ -1,11 +1,11 @@
 'use client';
 
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import './existential.scss';
 import Image from 'next/image';
 
 export default function Existential() {
-    const { t } = useTranslation('photography');
+    // const { t } = useTranslation('photography');
 
     return (
         <div className="photography-page">
