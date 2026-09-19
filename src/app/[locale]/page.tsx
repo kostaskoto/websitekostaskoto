@@ -20,7 +20,7 @@ export default function Home() {
           alt={t('image-alt')}
           width={2463}
           height={3695}
-          loading="lazy"
+          loading="eager"
         />
         <div className='home-chapter'>
           <div className='home-title-2'>

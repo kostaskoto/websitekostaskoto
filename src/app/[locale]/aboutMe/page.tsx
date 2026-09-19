@@ -17,7 +17,7 @@ export default function AboutMe() {
                     alt="About Me"
                     width={1080}
                     height={1620}
-                    loading="lazy"
+                    loading="eager"
                     />
                 </div>
                 <div className="about-me-content">
