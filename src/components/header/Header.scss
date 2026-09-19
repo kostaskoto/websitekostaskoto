@@ -9,24 +9,102 @@
     top: 0;
     z-index: 1000;
 
-    .header-button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-wrap: nowrap;
-        letter-spacing: 0.05em;
+    .menu-icon-button {
+        display: none;
+    }
+
+    .close-menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1.5rem;
+
+        .header-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-wrap: nowrap;
+            letter-spacing: 0.05em;
+
+            .header-button-text {
+                color: white;
+            }
+        }
+    }
+
+    .header-button-text:hover {
+        text-decoration: underline;
+    }
+
+    .header-button:focus-visible {
+        outline: none;
 
         .header-button-text {
-            color: white;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+@media (max-width: calc(60vh + 800px)) {
+    .header {
+        justify-content: space-between;
+
+        .menu {
+            justify-content: start;
         }
 
     }
 
+}
 
+@media (max-width: 625px) {
+    .header {
+        justify-content: end;
 
-    .header-button:hover {
-        text-decoration: underline;
+        .open {
+            display: block;
+        }
+
+        .menu-icon-button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .close-menu-button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: absolute;
+            display: none;
+            top: 100%;
+            right: 0;
+            background-color: black;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            gap: 2rem;
+            padding: 0 4rem 2rem 4rem;
+            width: 100%;
+            transform-origin: top right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu.open {
+            display: flex;
+        }
     }
 }
