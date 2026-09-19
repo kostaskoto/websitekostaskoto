@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    width: 100%;
     gap: 1.5rem;
     padding: 2rem 4rem;
     background-color: black;
@@ -11,10 +12,14 @@
 
     .menu-icon-button {
         display: none;
+        padding: 0;
+        margin: 0;
     }
 
     .close-menu-button {
         display: none;
+        padding: 0;
+        margin: 0;
     }
 
     .menu {
@@ -89,7 +94,7 @@
 
         .menu {
             position: absolute;
-            display: none;
+            display: flex;
             top: 100%;
             right: 0;
             background-color: black;
@@ -97,14 +102,24 @@
             align-items: start;
             justify-content: start;
             gap: 2rem;
-            padding: 0 4rem 2rem 4rem;
+            padding: 0 4rem 3rem 4rem;
             width: 100%;
-            transform-origin: top right;
-            transition: transform 0.3s ease-in-out;
+            height: 100vh;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, display 0.0s;
+
+            .header-button {
+                display: none;
+            }
         }
 
         .menu.open {
             display: flex;
+            opacity: 1;
+
+            .header-button {
+                display: block;
+            }
         }
     }
 }
