@@ -50,13 +50,28 @@ export default function AboutMe() {
                         </div>
                     </div>
                     <div className='about-me-chapter'>
+                        <h3>{t('publications-title')}</h3>
+                        <div className="about-me-subcontent">
+                            <a href='https://dl.acm.org/doi/full/10.1145/3772363.3798728' target="_blank" rel="noopener noreferrer">
+                                <h4>{t('chi2026')}</h4>
+                            </a>
+                            <p>{t('chi2026-description')}</p>
+                        </div>
+                        <div className="about-me-subcontent">
+                            <a href='https://link.springer.com/chapter/10.1007/978-3-032-05005-2_1' target="_blank" rel="noopener noreferrer">
+                                <h4>{t('interact2025')}</h4>
+                            </a>
+                            <p>{t('interact2025-description')}</p>
+                        </div>
+                    </div>
+                    <div className='about-me-chapter'>
                         <h3>{t('volunteering-title')}</h3>
                         <div className="about-me-subcontent">
                             <h4>{t('upatras')}</h4>
-                            <h5>{t('upatras-date-1')}</h5>
-                            <p>{t('upatras-description-1')}</p>
                             <h5>{t('upatras-date-2')}</h5>
                             <p>{t('upatras-description-2')}</p>
+                            <h5>{t('upatras-date-1')}</h5>
+                            <p>{t('upatras-description-1')}</p>
                         </div>
                         <div className="about-me-subcontent">
                             <h4>{t('n+1')}</h4>
