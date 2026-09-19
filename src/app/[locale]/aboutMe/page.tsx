@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <div className="about-me-page">
             <div className='about-me-container'>
-                <div>
+                <div className="about-me-image-container">
                     <Image
                     className="about-me-image"
                     src="/aboutMe/aboutMe.jpg"

@@ -4,8 +4,11 @@
     align-items: center;
     justify-content: start;
     width: 100%;
-    height: calc(100vh - 5rem);
-    overflow: scroll;
+
+    .about-me-image-container {
+        position: sticky;
+        top: 5rem;
+    }
 
     .about-me-page {
         display: flex;
@@ -25,12 +28,12 @@
             width: 100%;
             max-width: 1200px;
 
+
+
             .about-me-image {
                 width: 400px;
                 height: auto;
                 border: 0.5rem solid white;
-                position: sticky;
-                top: 5rem;
             }
 
             .about-me-content {
