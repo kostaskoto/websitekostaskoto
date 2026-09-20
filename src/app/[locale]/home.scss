@@ -29,7 +29,6 @@
         justify-content: start;
         align-items: start;
         translate: 0 0;
-        height: 100%;
     }
 
     .home-title-2 {
@@ -102,6 +101,7 @@
             justify-content: end;
             align-items: end;
             translate: 0 -65%;
+            height: 100%;
         }
 
         .home-chapter {
@@ -152,7 +152,6 @@
             justify-content: start;
             align-items: start;
             translate: 0 0;
-            height: 100%;
         }
 
         .home-chapter {
@@ -191,6 +190,11 @@
             justify-content: start;
             width: fit-content;
 
+            .home-title {
+                display: flex;
+                padding: 0;
+                margin: 0;
+            }
 
             .home-chapter {
                 .home-title-2 {
