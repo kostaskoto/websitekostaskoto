@@ -8,7 +8,7 @@ export default function Existential() {
     // const { t } = useTranslation('photography');
 
     return (
-        <div className="photography-page">
+        <div className="portfolio-page">
             <div className='wrapper'>
       <div className='gradient' />
       <div className='content'>

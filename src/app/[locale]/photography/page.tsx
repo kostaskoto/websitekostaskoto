@@ -1,29 +1,65 @@
 'use client';
 
 import Poster from '@/components/poster/poster';
-import './photography.scss';
 import { useTranslation } from 'react-i18next';
 
 export default function Photography() {
   const { t } = useTranslation('photography');
 
+  const posters = [
+    {
+      key: 'existential',
+      imageUrl: '/photography/existential/existential.jpg',
+      link: 'photography/existential',
+    },
+    {
+      key: 'notGoodEnough',
+      imageUrl: '/photography/notGoodEnough/notGoodEnough.jpg',
+      link: 'photography/notGoodEnough',
+    },
+  ];
+
   return (
-    <div className="photography-page">
+    <div className="portfolio-page">
       <h3>{t('title')}</h3>
       <h4>{t('exhibitions')}</h4>
       <div className='horizontal-section'>
-        <Poster
-            title={t('existential.title')}
-            description={t('existential.description')}
-            imageUrl="/photography/existential/existential.jpg"
-            link="photography/existential"
-        />
-        <Poster
-            title={t('notGoodEnough.title')}
-            description={t('notGoodEnough.description')}
-            imageUrl="/photography/notGoodEnough/notGoodEnough.jpg"
-            link="photography/notGoodEnough"
-        />
+        {posters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
+        {posters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
+        {posters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
+        {posters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
       </div>
     </div>
   );

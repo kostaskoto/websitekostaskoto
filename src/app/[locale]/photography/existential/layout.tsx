@@ -4,7 +4,7 @@ import '../photography.scss';
 
 export default function ExistentialLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <div className="photography-layout">
+    <div className="portfolio-layout">
       {children}
     </div>
   );

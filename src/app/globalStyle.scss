@@ -19,6 +19,7 @@ body {
   :root {
     --background: #000000;
     --foreground: #ededed;
+
   }
 
   html {
@@ -78,6 +79,29 @@ p {
   font-weight: 400;
 }
 
+.portfolio-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+
+  .portfolio-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+
+    h3,
+    h4 {
+      padding: 0 0 0 10vw;
+    }
+  }
+}
+
 .horizontal-section {
   display: flex;
   flex-direction: row;
@@ -87,6 +111,10 @@ p {
   width: 100%;
   overflow-x: scroll;
   padding-bottom: 0.6rem;
+  padding: 0 10vw 0.6rem 10vw;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
 }
 
 

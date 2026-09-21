@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-import './LanguageChanger.css';
+import './LanguageChanger.scss';
 import { ChangeEvent } from 'react';
 
 export default function LanguageChanger() {

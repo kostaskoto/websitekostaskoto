@@ -6,7 +6,7 @@ export default function NotGoodEnough() {
     // const { t } = useTranslation('photography');
 
     return (
-        <div className="photography-page">
+        <div className="portfolio-page">
             hi
         </div>
     );
