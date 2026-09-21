@@ -33,33 +33,6 @@ export default function Photography() {
             link={link}
           />
         ))}
-        {posters.map(({ key, imageUrl, link }) => (
-          <Poster
-            key={key}
-            title={t(`${key}.title`)}
-            description={t(`${key}.description`)}
-            imageUrl={imageUrl}
-            link={link}
-          />
-        ))}
-        {posters.map(({ key, imageUrl, link }) => (
-          <Poster
-            key={key}
-            title={t(`${key}.title`)}
-            description={t(`${key}.description`)}
-            imageUrl={imageUrl}
-            link={link}
-          />
-        ))}
-        {posters.map(({ key, imageUrl, link }) => (
-          <Poster
-            key={key}
-            title={t(`${key}.title`)}
-            description={t(`${key}.description`)}
-            imageUrl={imageUrl}
-            link={link}
-          />
-        ))}
       </div>
     </div>
   );
