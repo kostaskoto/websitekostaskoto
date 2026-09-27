@@ -3,7 +3,7 @@ import './Header.scss';
 import { useRouter } from 'next/navigation';
 import LanguageChanger from '../language/LanguageChanger';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -12,13 +12,26 @@ const Header = () => {
     const router = useRouter();
     const { t } = useTranslation('header');
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return (
-        <div className="header">
+        <div className={`header ${scrolled ? 'scrolled' : ''}`}>
             <button className={`menu-icon-button ${isOpen ? '' : 'open'}`} onClick={toggleMenu}>
                 <MenuIcon className='menu-icon' />
             </button>
