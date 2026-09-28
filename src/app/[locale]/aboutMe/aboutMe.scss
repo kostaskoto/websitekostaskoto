@@ -8,6 +8,8 @@
     .about-me-image-container {
         position: sticky;
         top: 5rem;
+        filter:
+            drop-shadow(0 0 150px #B47345);
     }
 
     a:hover {

@@ -1,8 +1,3 @@
-.scrolled {
-    background-color: black;
-    transition: background-color 0.2s ease-in-out;
-}
-
 .header {
     display: flex;
     align-items: center;
@@ -11,11 +6,40 @@
     min-width: 310px;
     gap: 1.5rem;
     padding: 2rem 4rem;
-    background-color: none;
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: background-color 0.2s ease-in-out;
+    filter:
+        drop-shadow(0 0 20px rgba(0, 0, 0, 1));
+
+    button {
+        z-index: 10;
+    }
+
+    .gradient-container {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 80rem;
+        height: 6rem;
+        transform: translate(0%, -0%);
+        overflow: hidden;
+        z-index: -1;
+
+        .gradient {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            width: 100%;
+            height: 200%;
+            transform: translate(40%, -50%);
+            overflow: visible;
+            background: radial-gradient(rgba(0, 0, 0, 1) 30%,
+                    rgba(0, 0, 0, 0) 70%);
+            z-index: -1;
+        }
+    }
 
     .menu-icon-button {
         display: none;
@@ -34,6 +58,8 @@
         align-items: center;
         justify-content: end;
         gap: 1.5rem;
+        overflow: hidden;
+        width: 100%;
 
         .header-button {
             background: none;
@@ -69,8 +95,26 @@
     .header {
         justify-content: space-between;
 
+        .gradient-container {
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            transform: translate(-0%, -0%);
+
+            .gradient {
+                top: 0%;
+                right: 0%;
+                width: 100%;
+                height: 100%;
+                transform: translate(0%, -0%);
+                background: linear-gradient(rgba(0, 0, 0, 1) 0%,
+                        rgba(0, 0, 0, 0) 90%);
+            }
+        }
+
         .menu {
             justify-content: start;
+
         }
 
     }
@@ -78,8 +122,36 @@
 }
 
 @media (max-width: 625px) {
+    .open {
+        background-color: black;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .closed {
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
     .header {
         justify-content: end;
+
+        .gradient-container {
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            transform: translate(-0%, -0%);
+
+            .gradient {
+                top: 0%;
+                right: 0%;
+                width: 100%;
+                height: 100%;
+                transform: translate(0%, -0%);
+                background: linear-gradient(rgba(0, 0, 0, 1) 0%,
+                        rgba(0, 0, 0, 0) 90%);
+            }
+        }
+
 
         .open {
             display: block;

@@ -16,7 +16,7 @@ export default function Photography() {
     {
       key: 'notGoodEnough',
       imageUrl: '/photography/notGoodEnough/notGoodEnough.jpg',
-      dsColor: 'rgba(137, 36, 25, 1)',
+      dsColor: 'rgba(240, 89, 37, 1)',
       link: 'photography/notGoodEnough',
     },
   ];

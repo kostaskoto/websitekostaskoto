@@ -21,7 +21,7 @@ const Poster = ({ title, description, imageUrl, link, dsColor, square = false }:
             router.push(link);
             window.scrollTo(0, 0);
         }}
-        style={{filter: `drop-shadow(0 0 0.8rem ${dsColor || 'rgba(0, 0, 0, 0)'})`}}
+        style={{filter: `drop-shadow(0 0 0.6rem ${dsColor || 'rgba(0, 0, 0, 0)'})`}}
         >
             <Image
             className="poster-image"
