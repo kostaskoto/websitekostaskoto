@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import LanguageChanger from '../language/LanguageChanger';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { localePath } from "@/lib/routes";
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -11,6 +12,8 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header = () => {
     const router = useRouter();
     const { t } = useTranslation('header');
+    const { i18n } = useTranslation();
+    const currentLocale = i18n.language;
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -31,28 +34,28 @@ const Header = () => {
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <button className='header-button' onClick={() => {
-                    router.push('/');
+                    router.push(localePath(currentLocale));
                     window.scrollTo(0, 0);
                 }}
-                    >
-                        <span className='header-button-text'>{t('home')}</span>
+                >
+                    <span className='header-button-text'>{t('home')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push('/photography');
+                    router.push(localePath(currentLocale, 'photography'));
                     window.scrollTo(0, 0);
                 }}
                 >
                     <span className='header-button-text'>{t('photography')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push('/graphicDesign');
+                    router.push(localePath(currentLocale, 'graphicDesign'));
                     window.scrollTo(0, 0);
                 }}
                 >
                     <span className='header-button-text'>{t('graphic-design')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push('/aboutMe');
+                    router.push(localePath(currentLocale, 'aboutMe'));
                     window.scrollTo(0, 0);
                 }}
                 >

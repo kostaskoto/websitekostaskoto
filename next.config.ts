@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export',
-  basePath: "/websitekostaskoto",
+  output: process.env.NEXT_PUBLIC_OUTPUT_MODE === "export" ? "export" : "standalone",
+
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+
   images: {
     unoptimized: true,
   },
