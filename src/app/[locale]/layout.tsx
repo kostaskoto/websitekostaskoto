@@ -3,6 +3,13 @@ import Header from '@/components/header/Header';
 import TranslationsProvider from '@/providers/TranslationProvider';
 import { ReactNode } from 'react';
 
+export function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "el" },
+  ];
+}
+
 interface LocaleLayoutProps {
   children: ReactNode;
   params: Promise<{ locale: string }>;
