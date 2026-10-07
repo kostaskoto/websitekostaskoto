@@ -1,5 +1,5 @@
 export const BASE_PATH =
-    process.env.NEXT_PUBLIC_BASE_PATH || "nada";
+    process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const DEFAULT_LOCALE =
     process.env.NEXT_PUBLIC_DEFAULT_LOCALE || "en";
