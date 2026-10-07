@@ -41,7 +41,7 @@ const Header = () => {
                     <span className='header-button-text'>{t('home')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push(localePath(currentLocale, 'photography'));
+                    router.push('/photography');
                     window.scrollTo(0, 0);
                 }}
                 >
