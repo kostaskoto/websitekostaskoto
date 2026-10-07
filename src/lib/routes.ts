@@ -17,6 +17,17 @@ export function localePath(
     const cleanPath = path.replace(/^\/+|\/+$/g, "");
 
     return cleanPath
+        ? `${locale}/${cleanPath}`
+        : `${locale}`;
+}
+
+export function landingLocalePath(
+    locale: string,
+    path: string = ""
+) {
+    const cleanPath = path.replace(/^\/+|\/+$/g, "");
+
+    return cleanPath
         ? `${BASE_PATH}/${locale}/${cleanPath}`
         : `${BASE_PATH}/${locale}`;
 }

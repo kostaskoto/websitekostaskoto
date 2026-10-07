@@ -1,13 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
-import { DEFAULT_LOCALE, localePath } from '@/lib/routes';
+import { DEFAULT_LOCALE, landingLocalePath } from '@/lib/routes';
 
 export default function RootPage() {
 
     useEffect(() => {
         window.location.replace(
-            localePath(DEFAULT_LOCALE)
+            landingLocalePath(DEFAULT_LOCALE)
         );
     }, []);
 
