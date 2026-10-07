@@ -5,6 +5,7 @@ import LanguageChanger from '../language/LanguageChanger';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { localePath } from '@/lib/routes';
+import { routerPush } from '@/lib/routing';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -34,29 +35,25 @@ const Header = () => {
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <button className='header-button' onClick={() => {
-                    router.push(localePath(currentLocale));
-                    window.scrollTo(0, 0);
+                    routerPush(setIsOpen, router, localePath(currentLocale));
                 }}
                 >
                     <span className='header-button-text'>{t('home')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push(localePath(currentLocale, 'photography'));
-                    window.scrollTo(0, 0);
+                    routerPush(setIsOpen, router, localePath(currentLocale, 'photography'));
                 }}
                 >
                     <span className='header-button-text'>{t('photography')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push(localePath(currentLocale, 'graphicDesign'));
-                    window.scrollTo(0, 0);
+                    routerPush(setIsOpen, router, localePath(currentLocale, 'graphicDesign'));
                 }}
                 >
                     <span className='header-button-text'>{t('graphic-design')}</span>
                 </button>
                 <button className='header-button' onClick={() => {
-                    router.push(localePath(currentLocale, 'aboutMe'));
-                    window.scrollTo(0, 0);
+                    routerPush(setIsOpen, router, localePath(currentLocale, 'aboutMe'));
                 }}
                 >
                     <span className='header-button-text'>{t('about-me')}</span>
