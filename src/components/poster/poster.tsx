@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { localePath } from "@/lib/routes";
 import { useTranslation } from 'react-i18next';
+import { assetPath } from "@/lib/site";
 
 interface PosterProps {
     title: string;
@@ -29,7 +30,7 @@ const Poster = ({ title, description, imageUrl, link, dsColor, square = false }:
         >
             <Image
                 className="poster-image"
-                src={imageUrl}
+                src={assetPath(imageUrl)}
                 alt="About Me"
                 width={1080}
                 height={square ? 1080 : 1528}

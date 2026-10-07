@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import './aboutMe.scss';
 import { useTranslation } from 'react-i18next';
+import { assetPath } from "@/lib/site";
 
 export default function AboutMe() {
     const { t } = useTranslation('aboutMe');
@@ -12,12 +13,12 @@ export default function AboutMe() {
             <div className='about-me-container'>
                 <div className="about-me-image-container">
                     <Image
-                    className="about-me-image"
-                    src="/aboutMe/aboutMe.jpg"
-                    alt="About Me"
-                    width={1080}
-                    height={1620}
-                    loading="eager"
+                        className="about-me-image"
+                        src={assetPath('/aboutMe/aboutMe.jpg')}
+                        alt="About Me"
+                        width={1080}
+                        height={1620}
+                        loading="eager"
                     />
                 </div>
                 <div className="about-me-content">
