@@ -17,8 +17,8 @@ export function localePath(
     const cleanPath = path.replace(/^\/+|\/+$/g, "");
 
     return cleanPath
-        ? `${locale}/${cleanPath}`
-        : `${locale}`;
+        ? `/${locale}/${cleanPath}`
+        : `/${locale}`;
 }
 
 export function landingLocalePath(
