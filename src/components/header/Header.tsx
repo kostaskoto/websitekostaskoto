@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import LanguageChanger from '../language/LanguageChanger';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { localePath } from "@/lib/routes";
+import { localePath } from '@/lib/routes';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
