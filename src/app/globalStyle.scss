@@ -116,12 +116,14 @@ p {
   gap: 1rem;
   width: 100%;
   overflow-x: scroll;
-  overflow-y: visible;
   padding: 1rem 10vw;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   z-index: 10;
+  filter:
+    drop-shadow(0 0 150px rgba(112, 107, 84, 1));
+
 }
 
 

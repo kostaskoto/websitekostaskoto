@@ -12,11 +12,10 @@ interface PosterProps {
     description: string;
     imageUrl: string;
     link: string;
-    dsColor?: string;
     square?: boolean;
 }
 
-const Poster = ({ title, description, imageUrl, link, dsColor, square = false }: PosterProps) => {
+const Poster = ({ title, description, imageUrl, link, square = false }: PosterProps) => {
     const router = useRouter();
     const { i18n } = useTranslation();
     const currentLocale = i18n.language;
@@ -26,7 +25,6 @@ const Poster = ({ title, description, imageUrl, link, dsColor, square = false }:
             router.push(localePath(currentLocale, link));
             window.scrollTo(0, 0);
         }}
-            style={{ filter: `drop-shadow(0 0 0.6rem ${dsColor || 'rgba(0, 0, 0, 0)'})` }}
         >
             <Image
                 className="poster-image"

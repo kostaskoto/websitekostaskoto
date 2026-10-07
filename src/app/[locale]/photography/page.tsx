@@ -25,14 +25,15 @@ export default function Photography() {
     <div className="portfolio-page">
       <h3>{t('title')}</h3>
       <h4>{t('exhibitions')}</h4>
-      <div className='horizontal-section'>
+      <div className='horizontal-section'
+        style={{ filter: `drop-shadow(0 0 150px rgba(137, 36, 25, 1))` }}
+      >
         {posters.map(({ key, imageUrl, dsColor, link }) => (
           <Poster
             key={key}
             title={t(`${key}.title`)}
             description={t(`${key}.description`)}
             imageUrl={imageUrl}
-            dsColor={dsColor}
             link={link}
           />
         ))}

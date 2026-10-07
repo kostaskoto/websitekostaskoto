@@ -33,7 +33,7 @@ const Header = () => {
             <button className={`close-menu-button ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <CloseIcon className='close-menu-icon' />
             </button>
-            <div className={`menu ${isOpen ? 'open' : ''}`}>
+            <div className={`menu ${isOpen ? 'open' : 'menuClosed'}`}>
                 <button className='header-button' onClick={() => {
                     routerPush(setIsOpen, router, localePath(currentLocale));
                 }}
