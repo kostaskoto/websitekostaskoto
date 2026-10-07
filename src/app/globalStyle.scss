@@ -107,6 +107,12 @@ p {
     }
   }
 
+  h3,
+  h4,
+  p {
+    z-index: 1500;
+  }
+
   .portfolio-content {
     display: flex;
     flex-direction: column;
@@ -120,8 +126,8 @@ p {
       flex-direction: column;
       justify-content: start;
       align-items: center;
+      gap: 1rem;
       padding: 0 5vw 2rem 5vw;
-      overflow: visible;
       width: 100%;
       max-width: 1200px;
 
@@ -129,6 +135,7 @@ p {
         border: 0.5rem solid white;
         width: 100%;
         height: auto;
+        z-index: 0;
       }
 
       .portfolio-pages-head {
@@ -138,6 +145,7 @@ p {
         align-items: start;
         gap: 1rem;
         width: 100%;
+        padding: 0 0 4rem 0;
 
         .portfolio-pages-head-subtitle {
           display: flex;
@@ -151,9 +159,18 @@ p {
           p {
             text-align: right;
             max-width: 50%;
-
+            z-index: 100;
           }
         }
+      }
+
+      .portfolio-pages-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
       }
     }
   }
