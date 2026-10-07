@@ -1,6 +1,7 @@
 .wrapper {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
     background: black;
@@ -32,19 +33,6 @@
     height: 600px;
     overflow: visible;
 
-    .gradient {
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        width: 80%;
-        height: 120%;
-        transform: translate(-50%, -50%);
-        overflow: visible;
-        background: radial-gradient(circle at center,
-                rgba(200, 200, 200, 0.4) 0%,
-                rgba(0, 0, 0, 1) 70%);
-        z-index: -1;
-    }
 }
 
 .image {
@@ -62,25 +50,10 @@
     h2 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
-        -glow-color: #8b5cf6;
 
         position: relative;
         isolation: isolate;
         text-wrap: pretty;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: -10px;
-
-            background: #8b5cf6;
-            border-radius: inherit;
-
-            filter: blur(25px);
-            opacity: 0.5;
-
-            z-index: -1;
-        }
     }
 
     p {
