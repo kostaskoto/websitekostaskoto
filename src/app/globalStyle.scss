@@ -90,7 +90,7 @@ p {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   width: 100%;
 
   .portfolio-page {
@@ -104,6 +104,82 @@ p {
     h3,
     h4 {
       padding: 0 0 0 10vw;
+    }
+  }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+
+    .portfolio-pages-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      padding: 0 5vw 2rem 5vw;
+      overflow: visible;
+      width: 100%;
+      max-width: 1200px;
+
+      .image {
+        border: 0.5rem solid white;
+        width: 100%;
+        height: auto;
+      }
+
+      .portfolio-pages-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+        width: 100%;
+
+        .portfolio-pages-head-subtitle {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: end;
+          gap: 0.5rem;
+          width: 100%;
+
+          h5,
+          p {
+            text-align: right;
+            max-width: 50%;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 625px) {
+
+  .portfolio-layout {
+
+    .portfolio-content {
+
+      .portfolio-pages-wrapper {
+
+        .portfolio-pages-head {
+
+          .portfolio-pages-head-subtitle {
+
+            h5,
+            p {
+              text-align: right;
+              max-width: 100%;
+
+            }
+          }
+        }
+      }
     }
   }
 }

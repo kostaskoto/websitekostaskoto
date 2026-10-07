@@ -4,7 +4,7 @@ import '../photography.scss';
 
 export default function NotGoodEnoughLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <div className="portfolio-layout">
+    <div className="portfolio-content">
       {children}
     </div>
   );
