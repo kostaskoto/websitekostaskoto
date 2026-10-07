@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTranslation } from 'react-i18next';
 import './home.scss';
+import { assetPath } from "@/lib/site";
 
 export default function Home() {
   const { t } = useTranslation('home');
@@ -16,7 +17,7 @@ export default function Home() {
         </div>
         <Image
           className='home-image'
-          src='/home/homeWelcome.jpg'
+          src={assetPath('/home/homeWelcome.jpg')}
           alt={t('image-alt')}
           width={2463}
           height={3695}
