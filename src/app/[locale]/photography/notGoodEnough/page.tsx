@@ -3,14 +3,15 @@
 import './notGoodEnough.scss';
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
+import { useTranslation } from 'react-i18next';
 
 export default function NotGoodEnough() {
-    // const { t } = useTranslation('photography');
+    const { t } = useTranslation('photography');
 
     return (
         <div className='portfolio-pages-wrapper'>
             <div className='portfolio-pages-head'>
-                <h1>ΔΕΝ ΕΙΜΑΙ ΑΡΚΕΤΟΣ</h1>
+                <h1>{t('notGoodEnough.title')}</h1>
                 <Image
                     src={assetPath('/photography/notGoodEnough/photoHeadNGE.jpg')}
                     alt="Not Good Enough photograph: man laying down naked on the bed during winter"
@@ -20,53 +21,41 @@ export default function NotGoodEnough() {
                     style={{ filter: 'drop-shadow(0 0 150px rgba(6, 30, 50, 1))' }}
                 />
                 <div className='portfolio-pages-head-subtitle'>
-                    <h5>Πάτρα, Δεκέμβριος 2024</h5>
-                    <p>Παρουσιάστηκε στο Σκαγιοπούλειο Ίδρυμα Πατρών
-                        στα πλαίσια του φωτογραφικού φεστιβάλ Ν+1 Κλικ του Α.Σ.Τ.Ο.-Επικοινωνούμε</p>
+                    <h5>{t('notGoodEnough.subtitle-1')}</h5>
+                    <p>{t('notGoodEnough.subtitle-2')}</p>
                 </div>
             </div>
             <div className='portfolio-pages-content'>
-                <div className='notGoodEnough-horizontal-text-image'>
-                    <div className='notGoodEnough-text'>
+                <p className='portfolio-pages-highlight'>{t('notGoodEnough.highlight')}</p>
+                <div className='portfolio-pages-horizontal-text-image'>
+                    <div className='portfolio-pages-text'>
+                        <h4>{t('notGoodEnough.title')}</h4>
                         <p>
-                            Δεν είμαι αρκετός… Μια φράση που παίζει συνέχεια στο
-                            κεφάλι μου.
+                            {t('notGoodEnough.notGoodEnough-1')}
                         </p>
                         <p>
-                            Μεγάλωσα στη Καστοριά με μια οικογένεια που με πρόσεχε και
-                            με αγαπούσε. Οι γονείς μου θέλανε να γίνω ο πρώτος, δεν
-                            θέλανε να περάσω ό,τι είχαν περάσει αυτοί. Με βοήθησαν, με
-                            προστάτευσαν. Με προστάτευσαν υπερβολικά πολύ…
+                            {t('notGoodEnough.notGoodEnough-2')}
                         </p>
                         <p>
-                            Όταν έφυγα από το σπίτι μου, πήγα να σπουδάσω στη Πάτρα.
-                            Η σχολή που ονειρεύομουν! Κάνω τη ζωή μου τώρα! Ή έτσι
-                            νόμιζα… Κάθε βήμα που έκανα ήταν γεμάτο ανασφάλεια.
-                            Έπρεπε να λάβω επιβεβαίωση από τους φίλους μου,
-                            γνωστούς, τους γονείς μου. Δεν ήμουν αρκετός να πάρω μια
-                            απόφαση, δεν ήμουν αρκετός να καθορίσω τη ζωή μου.
+                            {t('notGoodEnough.notGoodEnough-3')}
                         </p>
                         <p>
-                            Έχασα τον έλεγχο σύντομα. Η λύση μου; Τελειομανία… μόνο και
-                            μόνο για να γίνουν τα πράγματα χειρότερα. Μετά από κάθε
-                            προσπάθεια, λύπη. Μετά από κάθε επιτυχία, θα μπορούσα να
-                            είμαι καλύτερος. Θα μπορούσα να είμαι καλύτερος. Τίποτα δεν
-                            ήταν αρκετά καλό… Δεν ήμουν αρκετά καλός… Ήμουν μοναχός
-                            μου.
+                            {t('notGoodEnough.notGoodEnough-4')}
                         </p>
                         <p>
-                            Έφτασα ένα σημείο όπου τίποτα πια δεν είχε νόημα. Ήμουν
-                            απελπισμένος, ήμουν μόνος μου.
+                            {t('notGoodEnough.notGoodEnough-5')}
                         </p>
                     </div>
-                    <Image
-                        src={assetPath('/photography/notGoodEnough/notGoodEnough.jpg')}
-                        alt="Existential Poster"
-                        width={400}
-                        height={600}
-                        className='notGoodEnough-image'
-                    // style={{ filter: 'drop-shadow(0 0 150px rgba(86, 62, 34, 1))' }}
-                    />
+                    <div className='portfolio-pages-image-container'>
+                        <Image
+                            src={assetPath('/photography/notGoodEnough/notGoodEnough.jpg')}
+                            alt="Not Good Enough Poster"
+                            width={400}
+                            height={600}
+                            className='portfolio-pages-image'
+                            style={{ filter: 'drop-shadow(0 0 150px rgba(86, 62, 34, 1))' }}
+                        />
+                    </div>
                 </div>
             </div>
 
