@@ -168,7 +168,7 @@ p {
         align-items: start;
         gap: 1rem;
         width: 100%;
-        padding: 0 0 4rem 0;
+        padding: 0 0 0rem 0;
 
         .portfolio-pages-head-subtitle {
           display: flex;
@@ -226,8 +226,17 @@ p {
           text-align: center;
           width: 100%;
           max-width: 900px;
-          padding: 0rem 10% 6rem 10%;
+          padding: 10rem 10%;
+          z-index: 50;
         }
+      }
+
+      .portfolio-pages-single-photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1rem;
+        padding: 6rem 0;
       }
     }
   }
@@ -263,7 +272,7 @@ p {
           }
 
           .portfolio-pages-highlight {
-            padding: 0rem 5% 6rem 5%;
+            padding: 6rem 5%;
           }
         }
       }
