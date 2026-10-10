@@ -39,7 +39,7 @@ export default function Existential() {
             <h4>{t('notGoodEnough.title')}</h4>
             <button className='portfolio-pages-button' onClick={() => {
               router.push(localePath(currentLocale, 'photography/notGoodEnough'));
-              window.scrollTo(0, 0);
+              window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             }}>
               <ArrowBackRoundedIcon className='portfolio-pages-button-icon' />
               <p>{t('existential.info-button')}</p>
