@@ -10,13 +10,11 @@ export default function Photography() {
     {
       key: 'existential',
       imageUrl: '/photography/existential/existential.jpg',
-      dsColor: 'rgba(137, 36, 25, 1)',
       link: 'photography/existential',
     },
     {
       key: 'notGoodEnough',
       imageUrl: '/photography/notGoodEnough/notGoodEnough.jpg',
-      dsColor: 'rgba(240, 89, 37, 1)',
       link: 'photography/notGoodEnough',
     },
   ];
@@ -28,7 +26,7 @@ export default function Photography() {
       <div className='horizontal-section'
         style={{ filter: `drop-shadow(0 0 150px rgba(137, 36, 25, 1))` }}
       >
-        {posters.map(({ key, imageUrl, dsColor, link }) => (
+        {posters.map(({ key, imageUrl, link }) => (
           <Poster
             key={key}
             title={t(`${key}.title`)}

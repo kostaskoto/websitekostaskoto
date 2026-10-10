@@ -6,6 +6,14 @@ import { useTranslation } from 'react-i18next';
 export default function GraphicDesign() {
   const { t } = useTranslation('graphicDesign');
 
+  const brandImagePosters = [
+    {
+      key: 'n+1Click',
+      imageUrl: '/graphicDesign/n+1Click/n+1Click.png',
+      link: 'graphicDesign/n+1Click',
+    },
+  ];
+
   return (
     <div className="portfolio-page">
       <h3>{t('title')}</h3>
@@ -13,13 +21,15 @@ export default function GraphicDesign() {
       <div className='horizontal-section'
         style={{ filter: `drop-shadow(0 0 150px rgba(137, 36, 25, 1))` }}
       >
-        <Poster
-          title={t('existential.title')}
-          description={t('existential.description')}
-          imageUrl="/photography/existential/existential.jpg"
-          link="existential"
-          square={true}
-        />
+        {brandImagePosters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
       </div>
       <h4>{t('ui-ux')}</h4>
       <div className='horizontal-section'>
