@@ -150,9 +150,8 @@ p {
       justify-content: start;
       align-items: center;
       gap: 1rem;
-      padding: 0 5vw 2rem 5vw;
+      padding: 0 0vw 2rem 0vw;
       width: 100%;
-      max-width: 1200px;
 
       .image {
         border: 0.5rem solid white;
@@ -168,7 +167,8 @@ p {
         align-items: start;
         gap: 1rem;
         width: 100%;
-        padding: 0 0 0rem 0;
+        padding: 0 5vw 0rem 5vw;
+        max-width: 1200px;
 
         .portfolio-pages-head-subtitle {
           display: flex;
@@ -194,6 +194,8 @@ p {
         align-items: center;
         gap: 1rem;
         width: 100%;
+        padding: 0 5vw 0rem 5vw;
+        max-width: 1200px;
 
         .portfolio-pages-horizontal-text-image {
           display: flex;
@@ -237,7 +239,8 @@ p {
         flex-direction: column;
         justify-content: start;
         gap: 1rem;
-        padding: 6rem 0;
+        padding: 6rem 5vw;
+        max-width: 1200px;
       }
     }
   }
@@ -294,8 +297,6 @@ p {
   /* IE and Edge */
   scrollbar-width: none;
   z-index: 10;
-  filter:
-    drop-shadow(0 0 150px rgba(112, 107, 84, 1));
 
 }
 

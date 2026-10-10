@@ -1,3 +1,32 @@
 {
-    "title": "Graphic Design"
+    "title": "Graphic Design",
+    "brand-images": "Brand Images",
+    "ui-ux": "UI/UX Design",
+    "otherDesigns": "Other Designs",
+    "n+1Click": {
+        "title": "N+1 Click 2024",
+        "description": "Photographic Festival",
+        "subtitle-1": "Patras December 2024",
+        "subtitle-2": "Skagiopoulio Fundation",
+        "poster-title": "Activities Posters",
+        "highlight": "This was the first attemp of the Photography Team of ASTO-Epikoinonoume to create a festival of such a scale. It hosted 12 exhibitions and 5 seminars/presentations. It lasted from the 29th of November until the 8th of December 2024.",
+        "drawing-title": "Drawings",
+        "photo-title": "Festival's Photographs"
+    },
+    "eskiBrandImage": {
+        "title": "ESKI",
+        "description": "Ski Rental Startup"
+    },
+    "lifeChain": {
+        "title": "Life Chain",
+        "description": "University Safety Startup"
+    },
+    "astoCalendar2026": {
+        "title": "ASTO Calendar 2026",
+        "description": "Yearly Calendar by the Photography Team"
+    },
+    "eestecYearBook": {
+        "title": "EESTEC Year Book",
+        "description": "Book for remembering Teams, Projects and Branches"
+    }
 }
