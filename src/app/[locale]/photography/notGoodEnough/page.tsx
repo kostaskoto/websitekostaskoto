@@ -59,17 +59,16 @@ export default function NotGoodEnough() {
                 </div>
             </div>
             <div className='portfolio-pages-single-photo'>
-                <h4>The presentation</h4>
+                <h4>{t('notGoodEnough.presentation')}</h4>
                 <Image
                     src={assetPath('/photography/notGoodEnough/notGoodEnoughExhibition.jpg')}
-                    alt="Not Good Enough photograph: man laying down naked on the bed during winter"
+                    alt="I Am Not Good Enough exhibition"
                     width={1200}
                     height={800}
                     className='image'
-                    style={{ filter: 'drop-shadow(0 0 150px rgba(184, 132, 82, 1))' }}
+                    style={{ filter: 'drop-shadow(0 0 150px #714D2B)' }}
                 />
             </div>
-
         </div>
     );
 }

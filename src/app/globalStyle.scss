@@ -199,6 +199,7 @@ p {
           display: flex;
           flex-direction: row;
           gap: 2rem;
+          z-index: 2000;
 
           .portfolio-pages-text {
             display: flex;
@@ -266,7 +267,7 @@ p {
         .portfolio-pages-content {
 
           .portfolio-pages-horizontal-text-image {
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: start;
             align-items: center;
           }

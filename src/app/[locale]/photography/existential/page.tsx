@@ -73,7 +73,17 @@ export default function Existential() {
           </div>
         </div>
       </div>
-
+      <div className='portfolio-pages-single-photo'>
+        <h4>{t('existential.presentation')}</h4>
+        <Image
+          src={assetPath('/photography/existential/existentialExhibition.jpg')}
+          alt="Existential exhibition"
+          width={1200}
+          height={800}
+          className='image'
+          style={{ filter: 'drop-shadow(0 0 150px #4E4228)' }}
+        />
+      </div>
 
     </div>
 
