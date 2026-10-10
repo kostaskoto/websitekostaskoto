@@ -12,6 +12,16 @@ export default function GraphicDesign() {
       imageUrl: '/graphicDesign/n+1Click/n+1Click.png',
       link: 'graphicDesign/n+1Click',
     },
+    {
+      key: 'eskiBrandImage',
+      imageUrl: '/graphicDesign/eskiBrandImage/eski.png',
+      link: 'graphicDesign/eskiBrandImage',
+    },
+    {
+      key: 'lifeChain',
+      imageUrl: '/graphicDesign/lifeChain/lifeChain.png',
+      link: 'graphicDesign/lifeChain',
+    }
   ];
 
   return (
