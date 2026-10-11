@@ -110,6 +110,51 @@ export default function Np1Click() {
         }
     ];
 
+    const calendar = [
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (1).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (2).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (3).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (4).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (5).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (6).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (7).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (8).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (9).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (10).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (11).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (12).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (13).png'
+        },
+        {
+            key: '/graphicDesign/n+1Click/astoCalendar (14).png'
+        }
+    ];
+
     return (
         <div className='portfolio-pages-wrapper'>
             <div className='portfolio-pages-head'>
@@ -156,6 +201,21 @@ export default function Np1Click() {
                             width={400}
                             height={600}
                             className='graphic-drawing-image'
+                        />
+                    ))}
+                </div>
+            </div>
+            <div className='graphic-poster-wide-content'>
+                <h4 className='graphic-poster-title'>{t('n+1Click.calendar-title')}</h4>
+                <div className='horizontal-section'>
+                    {calendar.map(({ key }) => (
+                        <Image
+                            key={key}
+                            src={assetPath(key)}
+                            alt="N+1 Click Calendar"
+                            width={400}
+                            height={600}
+                            className='graphic-photo-image'
                         />
                     ))}
                 </div>
