@@ -32,6 +32,15 @@ export default function eskiBrandImage() {
         }
     ];
 
+    const drawings = [
+        {
+            key: '/graphicDesign/eskiBrandImage/eskiCard (1).png'
+        },
+        {
+            key: '/graphicDesign/eskiBrandImage/eskiCard (2).png'
+        }
+    ];
+
     return (
         <div className='portfolio-pages-wrapper'>
             <div className='portfolio-pages-head'>
@@ -49,9 +58,6 @@ export default function eskiBrandImage() {
                     <p>{t('eskiBrandImage.subtitle-2')}</p>
                 </div>
             </div>
-            <div className='portfolio-pages-content'>
-                <p className='portfolio-pages-highlight'>{t('eskiBrandImage.highlight')}</p>
-            </div>
             <div className='graphic-poster-wide-content'>
                 <h4 className='graphic-poster-title'>{t('eskiBrandImage.poster-title')}</h4>
                 <div className='horizontal-section'>
@@ -63,6 +69,27 @@ export default function eskiBrandImage() {
                             width={400}
                             height={600}
                             className='graphic-poster-image'
+                        />
+                    ))}
+                </div>
+            </div>
+            <div className='portfolio-pages-content'>
+                <p className='portfolio-pages-highlight'>{t('eskiBrandImage.highlight')}</p>
+            </div>
+            <div className='graphic-poster-wide-content'>
+                <h4 className='graphic-poster-title'>{t('eskiBrandImage.drawing-title')}</h4>
+                <div
+                    className='graphic-drawings'
+                    style={{ filter: 'drop-shadow(0 0 150px #3A60A0' }}
+                >
+                    {drawings.map(({ key }) => (
+                        <Image
+                            key={key}
+                            src={assetPath(key)}
+                            alt="N+1 Click Drawing"
+                            width={400}
+                            height={600}
+                            className='graphic-drawing-image'
                         />
                     ))}
                 </div>

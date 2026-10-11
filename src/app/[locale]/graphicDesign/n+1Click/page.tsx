@@ -192,7 +192,10 @@ export default function Np1Click() {
             </div>
             <div className='graphic-poster-wide-content'>
                 <h4 className='graphic-poster-title'>{t('n+1Click.drawing-title')}</h4>
-                <div className='graphic-drawings'>
+                <div
+                    className='graphic-drawings'
+                    style={{ filter: 'drop-shadow(0 0 150px #ffffff99)' }}
+                >
                     {drawings.map(({ key }) => (
                         <Image
                             key={key}
