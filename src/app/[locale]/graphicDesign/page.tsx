@@ -24,16 +24,49 @@ export default function GraphicDesign() {
     }
   ];
 
+  const uxPosters = [
+    {
+      key: 'domo',
+      imageUrl: '/graphicDesign/domo/domo.png',
+      link: 'graphicDesign/domo',
+    },
+    {
+      key: 'fidemBank',
+      imageUrl: '/graphicDesign/fidemBank/fidemBank.png',
+      link: 'graphicDesign/fidemBank',
+    },
+    {
+      key: 'astoWebsite2021',
+      imageUrl: '/graphicDesign/astoWebsite2021/astoWebsite2021.png',
+      link: 'graphicDesign/astoWebsite2021',
+    },
+  ];
+
   const publicationsPosters = [
+    {
+      key: 'chiPoster2026',
+      imageUrl: '/graphicDesign/chiPoster2026/chiPoster2026.png',
+      link: 'graphicDesign/chiPoster2026'
+    },
     {
       key: 'astoCalendar2026',
       imageUrl: '/graphicDesign/astoCalendar2026/astoCalendar2026.png',
       link: 'graphicDesign/astoCalendar2026',
     },
     {
+      key: 'ieee',
+      imageUrl: '/graphicDesign/ieee/ieee.png',
+      link: 'graphicDesign/ieee',
+    },
+    {
       key: 'eestecYearBook',
       imageUrl: '/graphicDesign/eestecYearBook/eestecYearBook.png',
       link: 'graphicDesign/eestecYearBook',
+    },
+    {
+      key: 'designSprint2021',
+      imageUrl: '/graphicDesign/designSprint2021/designSprint2021.png',
+      link: 'graphicDesign/designSprint2021',
     }
   ];
 
@@ -56,13 +89,15 @@ export default function GraphicDesign() {
       </div>
       <h4>{t('ui-ux')}</h4>
       <div className='horizontal-section'>
-        <Poster
-          title={t('existential.title')}
-          description={t('existential.description')}
-          imageUrl="/photography/existential/existential.jpg"
-          link="existential"
-          square={true}
-        />
+        {uxPosters.map(({ key, imageUrl, link }) => (
+          <Poster
+            key={key}
+            title={t(`${key}.title`)}
+            description={t(`${key}.description`)}
+            imageUrl={imageUrl}
+            link={link}
+          />
+        ))}
       </div>
       <h4>{t('otherDesigns')}</h4>
       <div className='horizontal-section'
