@@ -26,6 +26,11 @@ export default function GraphicDesign() {
 
   const uxPosters = [
     {
+      key: 'eski',
+      imageUrl: '/graphicDesign/eski/eski.png',
+      link: 'graphicDesign/eski',
+    },
+    {
       key: 'domo',
       imageUrl: '/graphicDesign/domo/domo.png',
       link: 'graphicDesign/domo',
@@ -57,6 +62,11 @@ export default function GraphicDesign() {
       key: 'ieee',
       imageUrl: '/graphicDesign/ieee/ieee.png',
       link: 'graphicDesign/ieee',
+    },
+    {
+      key: 'eestecOther',
+      imageUrl: '/graphicDesign/eestecOther/eestecOther.jpg',
+      link: 'graphicDesign/eestecOther',
     },
     {
       key: 'eestecYearBook',
