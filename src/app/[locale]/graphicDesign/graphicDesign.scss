@@ -22,7 +22,16 @@
     .graphic-website-image {
         width: 100%;
         height: auto;
-        max-width: 600px;
+        max-width: 550px;
+        border: 0.2rem solid white;
+        margin: 0.2rem 0;
+
+    }
+
+    .graphic-app-image {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
         border: 0.2rem solid white;
         margin: 0.2rem 0;
 
@@ -76,10 +85,6 @@
 
 @media (max-width: 625px) {
     .graphic-poster-wide-content {
-
-        .horizontal-section {
-            align-items: center;
-        }
 
         .graphic-photo-image {
             width: auto;

@@ -38,6 +38,14 @@
         "website": "Customer Website",
         "pms": "Product Managment System"
     },
+    "domo": {
+        "title": "Domo",
+        "description": "University IOT Project",
+        "subtitle-1": "December 2023",
+        "subtitle-2": "University IOT Project",
+        "drawing-title": "Architecture",
+        "poster-title": "App UI"
+    },
     "astoCalendar2026": {
         "title": "ASTO Calendar 2026",
         "description": "Yearly Calendar by the Photography Team"
