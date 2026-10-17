@@ -46,6 +46,13 @@
         "drawing-title": "Architecture",
         "poster-title": "App UI"
     },
+    "fidemBank": {
+        "title": "Fidem Bank",
+        "description": "University HCI Project",
+        "subtitle-1": "December 2021",
+        "subtitle-2": "University HCI Project",
+        "drawing-title": "Fidem Bank UI/UX"
+    },
     "astoCalendar2026": {
         "title": "ASTO Calendar 2026",
         "description": "Yearly Calendar by the Photography Team"
