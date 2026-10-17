@@ -53,6 +53,18 @@
         "subtitle-2": "University HCI Project",
         "drawing-title": "Fidem Bank UI/UX"
     },
+    "chiPoster2026": {
+        "title": "CHI 2026 Poster",
+        "description": "Barcelona, Spain",
+        "subtitle-1": "April 2026, Barcelona, Spain",
+        "subtitle-2": "Here you can find more"
+    },
+    "astoWebsite2021": {
+        "title": "ASTO Website",
+        "description": "UI Design 2021",
+        "subtitle-1": "Designed on 2021",
+        "subtitle-2": "UI Design"
+    },
     "astoCalendar2026": {
         "title": "ASTO Calendar 2026",
         "description": "Yearly Calendar by the Photography Team"

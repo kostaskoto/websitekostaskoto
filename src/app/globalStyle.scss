@@ -179,10 +179,15 @@ p {
           width: 100%;
 
           h5,
-          p {
+          p,
+          a {
             text-align: right;
             max-width: 50%;
             z-index: 100;
+          }
+
+          a:hover {
+            text-decoration: underline;
           }
         }
       }

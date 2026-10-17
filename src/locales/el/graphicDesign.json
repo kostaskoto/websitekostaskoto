@@ -53,6 +53,18 @@
         "subtitle-2": "Εργασία Πανεπιστημίου για HCI",
         "drawing-title": "Fidem Bank UI/UX"
     },
+    "astoWebsite2021": {
+        "title": "Ιστοσελίδα ΑΣΤΟ-Επικοινωνούμε",
+        "description": "Σχέδιο UI 2021",
+        "subtitle-1": "Σχεδιάστηκε το 2021",
+        "subtitle-2": "UI Σχέδιο"
+    },
+    "chiPoster2026": {
+        "title": "CHI 2026 Poster",
+        "description": "Βαρκελώνη, Ισπανία",
+        "subtitle-1": "Απρίλιος 2026, Βαρκελώνη, Ισπανία",
+        "subtitle-2": "Μάθε εδώ περισσότερα"
+    },
     "astoCalendar2026": {
         "title": "ΑΣΤΟ-Επικοινωνούμε Ημερολόγιο 2026",
         "description": "Ετήσιο Ημερολόγιο της Φωτογραφικής Ομάδας"
