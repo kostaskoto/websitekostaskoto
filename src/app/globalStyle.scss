@@ -113,6 +113,10 @@ p {
     z-index: 1500;
   }
 
+  .z-4000 {
+    z-index: 4000;
+  }
+
   .portfolio-pages-button {
     display: flex;
     flex-direction: row;
@@ -152,6 +156,13 @@ p {
       gap: 1rem;
       padding: 0 0vw 2rem 0vw;
       width: 100%;
+
+      .video {
+        border: 0.5rem solid white;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        z-index: 0;
+      }
 
       .image {
         border: 0.5rem solid white;

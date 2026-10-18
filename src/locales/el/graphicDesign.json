@@ -69,6 +69,21 @@
         "title": "ΑΣΤΟ-Επικοινωνούμε Ημερολόγιο 2026",
         "description": "Ετήσιο Ημερολόγιο της Φωτογραφικής Ομάδας"
     },
+    "ieee": {
+        "title": "IEEE SB UPatras",
+        "description": "Σχέδια δημιουργημένα μεταξύ 2023-2024",
+        "subtitle-2": "Σχέδια δημιουργημένα μεταξύ 2023-2024",
+        "drawing-title": "Σχεδια"
+    },
+    "eestecOther": {
+        "title": "Σχέδια για την EESTEC",
+        "description": "Δημιουργήθηκαν μεταξύ 2020-2022",
+        "subtitle-2": "Τα σχέδια δημιουργήθηκαν μεταξύ 2020-2022",
+        "badges": "Καρτελακια",
+        "tShirt": "Μπλουζακια",
+        "certificate": "Πιστοποιητικα",
+        "events": "Ανακοινωση Ταξιδιων"
+    },
     "eestecYearBook": {
         "title": "EESTEC Year Book",
         "description": "Αναμνηστικό των Teams, Projects and Branches"

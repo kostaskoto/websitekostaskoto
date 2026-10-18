@@ -53,21 +53,36 @@
         "subtitle-2": "University HCI Project",
         "drawing-title": "Fidem Bank UI/UX"
     },
-    "chiPoster2026": {
-        "title": "CHI 2026 Poster",
-        "description": "Barcelona, Spain",
-        "subtitle-1": "April 2026, Barcelona, Spain",
-        "subtitle-2": "Here you can find more"
-    },
     "astoWebsite2021": {
         "title": "ASTO Website",
         "description": "UI Design 2021",
         "subtitle-1": "Designed on 2021",
         "subtitle-2": "UI Design"
     },
+    "chiPoster2026": {
+        "title": "CHI 2026 Poster",
+        "description": "Barcelona, Spain",
+        "subtitle-1": "April 2026, Barcelona, Spain",
+        "subtitle-2": "Here you can find more"
+    },
     "astoCalendar2026": {
         "title": "ASTO Calendar 2026",
         "description": "Yearly Calendar by the Photography Team"
+    },
+    "ieee": {
+        "title": "IEEE SB UPatras",
+        "description": "Designs created between 2023-2024",
+        "subtitle-2": "Designs created between 2023-2024",
+        "drawing-title": "Designs"
+    },
+    "eestecOther": {
+        "title": "EESTEC Designs",
+        "description": "Various Designs between 2020-2022",
+        "subtitle-2": "Designs created between 2020-2022",
+        "badges": "Badges Design",
+        "tShirt": "T-Shirts Design",
+        "certificate": "Certificate Design",
+        "events": "Event Planning Design"
     },
     "eestecYearBook": {
         "title": "EESTEC Year Book",
