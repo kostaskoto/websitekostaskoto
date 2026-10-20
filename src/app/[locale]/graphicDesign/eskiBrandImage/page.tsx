@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
-import './../graphicDesign.scss';
 
 export default function eskiBrandImage() {
     const { t } = useTranslation('graphicDesign');

@@ -1,6 +1,5 @@
 'use client';
 
-import './existential.scss';
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
@@ -14,6 +13,20 @@ export default function Existential() {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
 
+  const posters = [
+    {
+      key: '/photography/existential/existential (1).jpg'
+    },
+    {
+      key: '/photography/existential/existential (2).jpg'
+    },
+    {
+      key: '/photography/existential/existential (3).jpg'
+    },
+    {
+      key: '/photography/existential/existential (4).jpg'
+    }
+  ];
 
   return (
     <div className='portfolio-pages-wrapper'>
@@ -71,6 +84,20 @@ export default function Existential() {
               style={{ filter: 'drop-shadow(0 0 150px rgba(124, 40, 27, 1))' }}
             />
           </div>
+        </div>
+      </div>
+      <div className='graphic-poster-wide-content'>
+        <div className='horizontal-section'>
+          {posters.map(({ key }) => (
+            <Image
+              key={key}
+              src={assetPath(key)}
+              alt="Existential Photos"
+              width={400}
+              height={600}
+              className='graphic-poster-image'
+            />
+          ))}
         </div>
       </div>
       <div className='portfolio-pages-single-photo'>

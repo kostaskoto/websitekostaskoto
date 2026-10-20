@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
-import './../graphicDesign.scss';
 
 export default function ieee() {
     const { t } = useTranslation('graphicDesign');
@@ -23,7 +22,7 @@ export default function ieee() {
                 <h1>{t('ieee.title')}</h1>
                 <Image
                     src={assetPath('/graphicDesign/ieee/ieeeHead.jpg')}
-                    alt="Photo holdinh IEEE letters"
+                    alt="Photo holding IEEE letters"
                     width={1200}
                     height={800}
                     className='image'

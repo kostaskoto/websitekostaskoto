@@ -87,5 +87,9 @@
     "eestecYearBook": {
         "title": "EESTEC Year Book",
         "description": "Book for remembering Teams, Projects and Branches"
+    },
+    "designSprint2021": {
+        "title": "Design Sprint 2021",
+        "description": "Promotion Material"
     }
 }

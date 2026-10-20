@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
-import './../graphicDesign.scss';
 
 export default function eestecOther() {
     const { t } = useTranslation('graphicDesign');
@@ -58,7 +57,7 @@ export default function eestecOther() {
             <div className='portfolio-pages-head'>
                 <h1>{t('eestecOther.title')}</h1>
                 <iframe
-                    src={'https://drive.google.com/file/d/1kxDBzS3cHVBO_27Q2P3za3d-rz3F2whU/preview?autoplay=1&mute=1'}
+                    src={'https://drive.google.com/file/d/1kxDBzS3cHVBO_27Q2P3za3d-rz3F2whU/preview?autoplay=1&mute=1&loop=1'}
                     title={'title'}
                     allow="autoplay; fullscreen"
                     allowFullScreen

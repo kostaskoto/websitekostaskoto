@@ -1,12 +1,26 @@
 'use client';
 
-import './notGoodEnough.scss';
 import Image from 'next/image';
 import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
 
 export default function NotGoodEnough() {
     const { t } = useTranslation('photography');
+
+    const posters = [
+        {
+            key: '/photography/notGoodEnough/notGoodEnough (1).jpg'
+        },
+        {
+            key: '/photography/notGoodEnough/notGoodEnough (2).jpg'
+        },
+        {
+            key: '/photography/notGoodEnough/notGoodEnough (3).jpg'
+        },
+        {
+            key: '/photography/notGoodEnough/notGoodEnough (4).jpg'
+        }
+    ];
 
     return (
         <div className='portfolio-pages-wrapper'>
@@ -56,6 +70,20 @@ export default function NotGoodEnough() {
                             style={{ filter: 'drop-shadow(0 0 150px rgba(86, 62, 34, 1))' }}
                         />
                     </div>
+                </div>
+            </div>
+            <div className='graphic-poster-wide-content'>
+                <div className='horizontal-section'>
+                    {posters.map(({ key }) => (
+                        <Image
+                            key={key}
+                            src={assetPath(key)}
+                            alt="Existential Photos"
+                            width={400}
+                            height={600}
+                            className='graphic-poster-image'
+                        />
+                    ))}
                 </div>
             </div>
             <div className='portfolio-pages-single-photo'>
