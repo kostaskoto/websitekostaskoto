@@ -160,13 +160,16 @@ p {
       .video {
         border: 0.5rem solid white;
         width: 100%;
-        aspect-ratio: 16 / 9;
+        min-width: 375px;
+        min-height: 320px;
+        aspect-ratio: 16 / 9.113;
         z-index: 0;
       }
 
       .video-v {
         border: 0.5rem solid white;
         width: 100%;
+        min-width: 375px;
         aspect-ratio: 9 / 16;
         z-index: 0;
       }
@@ -175,14 +178,18 @@ p {
         border: 0.5rem solid white;
         width: 100%;
         max-width: 600px;
+        min-width: 375px;
         aspect-ratio: 2.018 / 3;
         z-index: 0;
       }
 
       .video-sq {
-        border: 0.5rem solid white;
         width: 100%;
-        max-width: 600px;
+        height: auto;
+        max-width: 400px;
+        // min-width: 375px;
+        border: 0.2rem solid white;
+        margin: 0.2rem 0;
         aspect-ratio: 1 / 1;
         z-index: 0;
       }
@@ -326,6 +333,20 @@ p {
           .portfolio-pages-highlight {
             padding: 6rem 5%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .portfolio-layout {
+    .portfolio-content {
+
+      .portfolio-pages-wrapper {
+
+        .video-sq {
+          min-width: 375px;
         }
       }
     }

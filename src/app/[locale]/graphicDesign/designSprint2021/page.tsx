@@ -1,56 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
 
 export default function designSprint2021() {
     const { t } = useTranslation('graphicDesign');
-
-    const posters = [
-        {
-            key: '/graphicDesign/designSprint2021/eestecBadgeHOBOM.jpg'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/eestecBadgePAX.jpg'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/eestecBadgeBoard.jpg'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/designSprint2021.jpg'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/eestecBadgeOC.jpg'
-        }
-    ];
-
-    const drawings = [
-        {
-            key: '/graphicDesign/designSprint2021/tShirtHobom.png'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/tShirtWibom.png'
-        }
-    ];
-
-    const certificates = [
-        {
-            key: '/graphicDesign/designSprint2021/subomCertificate.png'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/wibomCertificate.png'
-        }
-    ];
-
-    const events = [
-        {
-            key: '/graphicDesign/designSprint2021/eventPlanning (1).png'
-        },
-        {
-            key: '/graphicDesign/designSprint2021/eventPlanning (2).png'
-        }
-    ];
 
     return (
         <div className='portfolio-pages-wrapper'>
@@ -67,11 +21,11 @@ export default function designSprint2021() {
                         style={{ filter: 'drop-shadow(0 0 150px #D51890)' }}
                     />
                 </div>
-                <div className='portfolio-pages-head-subtitle'>
-                    <p>{t('designSprint2021.description')}</p>
-                </div>
             </div>
-            <div className='graphic-poster-wide-content'>
+            <div className='graphic-poster-wide-content'
+                style={{ paddingTop: '4rem' }}
+            >
+                <h4 className='graphic-poster-title'>{t('designSprint2021.description')}</h4>
                 <div className='horizontal-section'>
                     <Image
                         src={'/graphicDesign/designSprint2021/designSprintIntro.png'}
