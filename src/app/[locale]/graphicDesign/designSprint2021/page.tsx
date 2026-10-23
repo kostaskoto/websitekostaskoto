@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { assetPath } from "@/lib/site";
 import { useTranslation } from 'react-i18next';
 
 export default function designSprint2021() {
@@ -28,7 +29,7 @@ export default function designSprint2021() {
                 <h4 className='graphic-poster-title'>{t('designSprint2021.description')}</h4>
                 <div className='horizontal-section'>
                     <Image
-                        src={'/graphicDesign/designSprint2021/designSprintIntro.png'}
+                        src={assetPath('/graphicDesign/designSprint2021/designSprintIntro.png')}
                         alt="EESTEC Badges Design"
                         width={400}
                         height={600}
